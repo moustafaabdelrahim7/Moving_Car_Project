@@ -1,4 +1,11 @@
-
+/**
+ ** @file                   motor.c
+ ** @brief                  This is source file for motor for TM4C123GH6PM
+ ** @author                 Mohammed Abdel-wahab
+ ** @date                   June 21, 2023
+ ** @version                0.1
+ */
+ 
 #include "motor.h"
 
 #include "gpio.h"
