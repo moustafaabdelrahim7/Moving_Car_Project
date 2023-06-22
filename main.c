@@ -22,6 +22,7 @@ int main (void)
 	{
 // do nothing
 // for moustafa
+/*123456*/
 		APP_init();
 		while (1)
 		{
