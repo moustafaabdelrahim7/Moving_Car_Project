@@ -20,9 +20,15 @@
 
 int main (void)
 	{
+<<<<<<< HEAD
 // do nothing
 // for moustafa
 /*123456*/
+=======
+// kpghpshg\wshg\wrsih\s
+
+
+>>>>>>> main
 		APP_init();
 		while (1)
 		{
