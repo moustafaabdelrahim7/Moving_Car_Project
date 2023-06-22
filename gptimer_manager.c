@@ -61,7 +61,7 @@ uint16_t timer0_delay_ms (uint16_t ms)
 	timer_start (&TIMER_0);
 	
 	//Poll the GPTMRIS register or wait for the interrupt to be generated (if enabled
-	while (READ_BIT(GPTMRIS_TIMER0,0) == TATORIS) ;
+	while (READ_BIT(GPTMRIS_TIMER0,0) == TATORIS) {};
 	
 			/* step 1: Timer0 A  is disabled*/
 	     timer_stop(&TIMER_0);
