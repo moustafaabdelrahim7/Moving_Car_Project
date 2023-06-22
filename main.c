@@ -20,6 +20,7 @@
 
 int main (void)
 	{
+// do nothing
 		APP_init();
 		while (1)
 		{
