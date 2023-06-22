@@ -1,0 +1,99 @@
+Dependencies for Project 'RGB LED Control V2.0', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
+F (.\MCAL\gpio.c)(0x648EDC60)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\MCAL\MCAL_inc -I .\UTILI-I.\RTE\_Target_1-IC:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (.\MCAL\MCAL_inc\gpio.h)(0x648EDC61)
+I (.\UTILI\common.h)(0x649027FD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B0A58)
+I (.\MCAL\MCAL_inc\gpio_config.h)(0x648ECF37)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EE4E6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C1230C3PM.h)(0x550FD41C)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F9424)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6C7E6)
+F (.\MCAL\systick.c)(0x6490A2FC)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\MCAL\MCAL_inc -I .\UTILI-I.\RTE\_Target_1-IC:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (.\MCAL\MCAL_inc\systick.h)(0x64908DDE)
+I (.\MCAL\MCAL_inc\systick_config.h)(0x6490A298)
+I (.\UTILI\common.h)(0x649027FD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B0A58)
+F (.\HAL\button.c)(0x648F0809)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\HAL\HAL_inc -I .\UTILI -I .\MCAL\MCAL_inc-I.\RTE\_Target_1-IC:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\button.o --omf_browse .\objects\button.crf --depend .\objects\button.d)
+I (.\HAL\HAL_inc\button.h)(0x648F1124)
+I (.\HAL\HAL_inc\button_config.h)(0x648F111F)
+I (.\MCAL\MCAL_inc\gpio.h)(0x648EDC61)
+I (.\UTILI\common.h)(0x649027FD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B0A58)
+I (.\MCAL\MCAL_inc\gpio_config.h)(0x648ECF37)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EE4E6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C1230C3PM.h)(0x550FD41C)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F9424)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6C7E6)
+F (.\HAL\led.c)(0x648F1281)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\HAL\HAL_inc -I .\UTILI -I .\MCAL\MCAL_inc-I.\RTE\_Target_1-IC:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (.\HAL\HAL_inc\led.h)(0x648F1281)
+I (.\HAL\HAL_inc\led_config.h)(0x648F1205)
+I (.\MCAL\MCAL_inc\gpio.h)(0x648EDC61)
+I (.\UTILI\common.h)(0x649027FD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B0A58)
+I (.\MCAL\MCAL_inc\gpio_config.h)(0x648ECF37)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EE4E6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C1230C3PM.h)(0x550FD41C)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F9424)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6C7E6)
+F (.\APP\app.c)(0x6490A126)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\APP\APP_inc -I .\UTILI -I .\HAL\HAL_inc -I .\MCAL\MCAL_inc-I.\RTE\_Target_1-IC:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d)
+I (.\APP\APP_inc\app.h)(0x648F10AF)
+I (.\HAL\HAL_inc\led.h)(0x648F1281)
+I (.\HAL\HAL_inc\led_config.h)(0x648F1205)
+I (.\MCAL\MCAL_inc\gpio.h)(0x648EDC61)
+I (.\UTILI\common.h)(0x649027FD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B0A58)
+I (.\MCAL\MCAL_inc\gpio_config.h)(0x648ECF37)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EE4E6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C1230C3PM.h)(0x550FD41C)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F9424)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6C7E6)
+I (.\HAL\HAL_inc\button.h)(0x648F1124)
+I (.\HAL\HAL_inc\button_config.h)(0x648F111F)
+I (.\MCAL\MCAL_inc\systick.h)(0x64908DDE)
+I (.\MCAL\MCAL_inc\systick_config.h)(0x6490A298)
+F (.\main.c)(0x648F10AF)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\UTILI -I .\HAL\HAL_inc -I .\MCAL\MCAL_inc -I .\APP\APP_inc-I.\RTE\_Target_1-IC:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\APP\APP_inc\app.h)(0x648F10AF)
+I (.\HAL\HAL_inc\led.h)(0x648F1281)
+I (.\HAL\HAL_inc\led_config.h)(0x648F1205)
+I (.\MCAL\MCAL_inc\gpio.h)(0x648EDC61)
+I (.\UTILI\common.h)(0x649027FD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B0A58)
+I (.\MCAL\MCAL_inc\gpio_config.h)(0x648ECF37)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EE4E6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C1230C3PM.h)(0x550FD41C)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F9424)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6C7E6)
+I (.\HAL\HAL_inc\button.h)(0x648F1124)
+I (.\HAL\HAL_inc\button_config.h)(0x648F111F)
+F (RTE\Device\TM4C1230C3PM\startup_TM4C123.s)(0x51B6C7E6)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "TM4C1230C3PM SETA 1"--list .\listings\startup_tm4c123.lst --xref -o .\objects\startup_tm4c123.o --depend .\objects\startup_tm4c123.d)
+F (RTE\Device\TM4C1230C3PM\system_TM4C123.c)(0x648EB95A)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\system_tm4c123.o --omf_browse .\objects\system_tm4c123.crf --depend .\objects\system_tm4c123.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B0A58)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EE4E6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C1230C3PM.h)(0x550FD41C)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25C8F6)
+I (C:\Users\acer\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F9424)
+I (C:\Users\acer\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6C7E6)
