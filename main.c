@@ -31,7 +31,7 @@ int main (void)
 	
 	
 	
-	
+	/*****************nnnnnnnnnnnnnnnn**/
 	
 	
 	
