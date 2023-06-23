@@ -17,7 +17,7 @@
 
 
 /**********************************  section 4: Data Type Declarations  ******************************************/
-typedef enum EN_motor_error_t 
+typedef enum
 { 
    MOTOR_E_NOK =0,
 	 MOTOR_E_OK = 1,
@@ -40,14 +40,14 @@ typedef struct
 * input       : pointer to structure which have port and two pin number
 * return      :MOTOR_OK or MOTR_NOK                                                                     
 ************************************************************************/
-en_motor_error_t MOTOR_INIT(const str_motor_config_t *strPtr_l_motor_config);
+en_motor_error_t MOTOR_INIT(const str_motor_config_t *strPtr_a_motor_config);
 
 /************************************************************************
 * description : this function used to move the motor forward
 * input       : pointer to structure which have port and two pin number and speed of motor
 * return      :MOTOR_OK or MOTR_NOK
 ************************************************************************/
-en_motor_error_t MOTOR_FORWARD(const str_motor_config_t *strPtr_l_motor_config);
+en_motor_error_t MOTOR_FORWARD(const str_motor_config_t *strPtr_a_motor_config);
 
 
 /************************************************************************
@@ -55,7 +55,7 @@ en_motor_error_t MOTOR_FORWARD(const str_motor_config_t *strPtr_l_motor_config);
 * input       : pointer to structure which have port and two pin number and speed of motor
 * return      :MOTOR_OK or MOTR_NOK
 ************************************************************************/
-en_motor_error_t MOTOR_BACKWARD(const str_motor_config_t *strPtr_l_motor_config);
+en_motor_error_t MOTOR_BACKWARD(const str_motor_config_t *strPtr_a_motor_config);
 
 
 /************************************************************************
@@ -63,7 +63,7 @@ en_motor_error_t MOTOR_BACKWARD(const str_motor_config_t *strPtr_l_motor_config)
 * input       : pointer to structure which have port and two pin number 
 * return      :MOTOR_OK or MOTR_NOK
 ************************************************************************/
-en_motor_error_t MOTOR_STOP(const str_motor_config_t *strPtr_l_motor_config);
+en_motor_error_t MOTOR_STOP(const str_motor_config_t *strPtr_a_motor_config);
 
 
 
