@@ -80,8 +80,8 @@ I (.\MCAL\MCAL_inc\gpio.h)(0x648EDC61)
 I (.\MCAL\MCAL_inc\gpio_config.h)(0x648ECF37)
 I (.\HAL\HAL_inc\led.h)(0x648F1281)
 I (.\HAL\HAL_inc\led_config.h)(0x648F1205)
-F (.\HAL\motor.c)(0x6495D76C)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\HAL\HAL_inc -I .\UTILI -I .\MCAL\MCAL_inc-I.\RTE\_Target_1-IC:\Users\Genius\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Genius\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\motor.o --omf_browse .\objects\motor.crf --depend .\objects\motor.d)
-I (.\HAL\HAL_inc\motor.h)(0x6495D74C)
+F (.\HAL\motor.c)(0x6495DF57)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\HAL\HAL_inc -I .\UTILI -I .\MCAL\MCAL_inc-I.\RTE\_Target_1-IC:\Users\Genius\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Genius\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\motor.o --omf_browse .\objects\motor.crf --depend .\objects\motor.d)
+I (.\HAL\HAL_inc\motor.h)(0x6495DF57)
 I (.\UTILI\common.h)(0x649027FD)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
 I (.\MCAL\MCAL_inc\gpio.h)(0x648EDC61)
@@ -94,10 +94,10 @@ I (C:\Users\Genius\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cm
 I (C:\Users\Genius\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
 I (C:\Users\Genius\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
 I (C:\Users\Genius\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6E406)
-F (.\HAL\HAL_inc\motor.h)(0x6495D74C)()
+F (.\HAL\HAL_inc\motor.h)(0x6495DF57)()
 F (.\HAL\HAL_inc\motor_config.h)(0x64947DA7)()
-F (.\APP\app.c)(0x6495D6FB)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\APP\APP_inc -I .\UTILI -I .\HAL\HAL_inc -I .\MCAL\MCAL_inc-I.\RTE\_Target_1-IC:\Users\Genius\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Genius\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d)
-I (.\APP\APP_inc\app.h)(0x6495D6FB)
+F (.\APP\app.c)(0x6495DF57)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\APP\APP_inc -I .\UTILI -I .\HAL\HAL_inc -I .\MCAL\MCAL_inc-I.\RTE\_Target_1-IC:\Users\Genius\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Genius\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d)
+I (.\APP\APP_inc\app.h)(0x6495DF57)
 I (.\HAL\HAL_inc\led.h)(0x648F1281)
 I (.\HAL\HAL_inc\led_config.h)(0x648F1205)
 I (.\MCAL\MCAL_inc\gpio.h)(0x648EDC61)
@@ -118,8 +118,8 @@ I (.\MCAL\MCAL_inc\gptimer_manager.h)(0x64945CF9)
 I (.\MCAL\MCAL_inc\gptimer_manager_config.h)(0x64944D34)
 I (.\MCAL\MCAL_inc\gptimer.h)(0x6494341B)
 I (.\MCAL\MCAL_inc\gptimer_config.h)(0x6494341B)
-F (.\main.c)(0x6495D76C)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\UTILI -I .\HAL\HAL_inc -I .\MCAL\MCAL_inc -I .\APP\APP_inc-I.\RTE\_Target_1-IC:\Users\Genius\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Genius\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\APP\APP_inc\app.h)(0x6495D6FB)
+F (.\main.c)(0x6495DF57)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\UTILI -I .\HAL\HAL_inc -I .\MCAL\MCAL_inc -I .\APP\APP_inc-I.\RTE\_Target_1-IC:\Users\Genius\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Genius\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C1230C3PM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\APP\APP_inc\app.h)(0x6495DF57)
 I (.\HAL\HAL_inc\led.h)(0x648F1281)
 I (.\HAL\HAL_inc\led_config.h)(0x648F1205)
 I (.\MCAL\MCAL_inc\gpio.h)(0x648EDC61)
