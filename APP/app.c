@@ -88,7 +88,7 @@ void car_stop_state (uint32_t u32_a_duration_ms)
 	
 	//MOTOR_STOP(const str_motor_config_t *strPtr_a_motor_config)   		--> [TODO] need to config STRUCTURE
 		time_sec_oneshot_mode(u32_a_duration_ms ,TimerCallBack_carMode);
-
+/*we need to make sure it is intializes only one time */
 }
 
 
