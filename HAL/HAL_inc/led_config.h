@@ -29,7 +29,7 @@
 #define  LED_DATA          LOW
 #define  LED_LOCK          UNLOCK
 #define  LED_STAT          PORT_DIGITAL
-
+#define  led_type					 GPIO
 
 
 

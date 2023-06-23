@@ -31,6 +31,7 @@ uint8_t led_init(uint8_t port_num,uint8_t pin_num)
 	led.pin_data=LED_DATA;
 	led.pin_lock=LED_LOCK;
 	led.pin_stat=LED_STAT;
+	led.pin_type=led_type;
 	
 	u8_status_t= pin_init(&led);
 	

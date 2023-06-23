@@ -10,16 +10,16 @@
 #include "button.h"
 #include "gptimer_manager.h"
 
-#define  _500_MS_SECOND 	500
-#define  _1_SECOND 				1000
-#define  _2_SECOND 				1000
-#define  _3_SECOND 				3000
+#define  _500_MS_SECOND 	1
+#define  _1_SECOND 				1
+#define  _2_SECOND 				2
+#define  _3_SECOND 				3
 
 	
 
 
 // GLOBAL VARIABLES
-uint8_t u8_carMode = 0,u8_start = 0 ;
+uint8_t u8_carMode = 0, u8_start = 0 ;
 
 
 // call back functions
@@ -31,6 +31,7 @@ void  TimerCallBack_carMode (void)
 void  SW1_CallBack_start (void)
 {
 	u8_start = CAR_START;
+	
 }
 
 void  SW2_CallBack_start (void)
@@ -50,7 +51,14 @@ void APP_init(void)
 
 	// button init
 	button_init(SW1_PORT,SW1_PIN);
-	// need one more button 																					--> [TODO] need to config button2 bin
+	//button_init(SW2_PORT,SW2_PIN);
+	
+	port_interrupt_enable(FALLING_EDGE,SW1_PORT,SW1_PIN);
+	port_interrupt_setcallback(SW1_CallBack_start,SW1_PORT,SW1_PIN);
+	
+		/*NEED TO FIGURE OUT WHAT IS WRONG WITH SW2*/
+//	port_interrupt_enable(BOTH_RISNG_FALLNG,SW2_PORT,SW2_PIN);
+//	port_interrupt_setcallback(SW2_CallBack_start,SW2_PORT,SW2_PIN);
 	
 	// motor init
 	// MOTOR_INIT(const str_motor_config_t *strPtr_a_motor_config);   --> [TODO] need to config STRUCTURE
@@ -79,7 +87,7 @@ void car_stop_state (uint32_t u32_a_duration_ms)
 	led_off(BLUE_LED_PORT,BLUE_LED_PIN);	
 	
 	//MOTOR_STOP(const str_motor_config_t *strPtr_a_motor_config)   		--> [TODO] need to config STRUCTURE
-	time_ms(u32_a_duration_ms ,TimerCallBack_carMode);
+		time_sec_oneshot_mode(u32_a_duration_ms ,TimerCallBack_carMode);
 
 }
 
@@ -98,12 +106,11 @@ void longSide_start()
 	led_on(GREEN_LED_PORT,GREEN_LED_PIN);
 	led_off(RED_LED_PORT,RED_LED_PIN);	
 	led_off(BLUE_LED_PORT,BLUE_LED_PIN);
-	
-	//	pwm_pin(50,PIN2,PORTF);																					--> [TODO] need to config pwm pin
-	//	pwm_pin(50,PIN2,PORTF);																					--> [TODO] need to config pwm pin
+//		pwm_pin(50,GREEN_LED_PORT,GREEN_LED_PIN);																			//		--> [TODO] need to config pwm pin
+	//	pwm_pin(50,PIN1,PORTF);																				//	--> [TODO] need to config pwm pin
 	//MOTOR_FORWARD(const str_motor_config_t *strPtr_a_motor_config);		--> [TODO] need to config STRUCTURE
 	
-	time_ms( _3_SECOND,TimerCallBack_carMode);
+	time_sec_oneshot_mode( _3_SECOND,TimerCallBack_carMode);
 
 }
 
@@ -114,7 +121,7 @@ this function calculates the time nedded of rotation to turn the car 90 degree a
 uint32_t rotate_90degree_calculation (void)
 {
 																															// --> [TODO] need to config calculation or try ny hardware and delete this api
-
+	return _3_SECOND;
 }
 
 
@@ -132,9 +139,11 @@ void rotate_90degree_state (void)
 	led_on(GREEN_LED_PORT,GREEN_LED_PIN);
 	led_on(RED_LED_PORT,RED_LED_PIN);	
 	led_on(BLUE_LED_PORT,BLUE_LED_PIN);
-	
+//	pwm_pin(10,GREEN_LED_PORT,GREEN_LED_PORT);
+//	pwm_pin(10,RED_LED_PORT,RED_LED_PORT);
+//	pwm_pin(10,BLUE_LED_PORT,BLUE_LED_PORT);
 	uint32_t u32_l_RotationTime = rotate_90degree_calculation(); 
-	time_ms( u32_l_RotationTime , TimerCallBack_carMode);
+	time_sec_oneshot_mode( u32_l_RotationTime , TimerCallBack_carMode);
 
 	//MOTOR_ROTATE(RIGHT)																											// --> [TODO] 	MOTOR ROTATE FUNCTION
 
@@ -158,10 +167,10 @@ void shortSide_start()
 	led_off(RED_LED_PORT,RED_LED_PIN);	
 
 	
-	//	pwm_pin(30,PIN2,PORTF);																					--> [TODO] need to config pwm pin
-	//	pwm_pin(30,PIN2,PORTF);																					--> [TODO] need to config pwm pin
+//		pwm_pin(30,BLUE_LED_PORT,BLUE_LED_PORT);																					//--> [TODO] need to config pwm pin
+	//	pwm_pin(30,PIN2,PORTF);																					//--> [TODO] need to config pwm pin
 	//MOTOR_FORWARD(const str_motor_config_t *strPtr_a_motor_config);		--> [TODO] need to config STRUCTURE
-	time_ms( _2_SECOND,TimerCallBack_carMode);
+	time_sec_oneshot_mode( _2_SECOND,TimerCallBack_carMode);
 
 	
 }
@@ -174,18 +183,19 @@ void APP_start(void){
 
 	if(u8_start == CAR_START) // EX_interrupt will set this flag by 1
 		{
-		
+			
 			if (u8_carMode == INITIAL_STOP)
 			{
 				car_stop_state(_1_SECOND);
 			}
 	
 	
-			else if(u8_carMode == LONG_SIDE ){
+			else if(u8_carMode == LONG_SIDE )
+				{
 
 				longSide_start();
 		
-			}
+				}
 	
 			else if (u8_carMode == STOP_AFTER_L_S)
 			{
@@ -237,10 +247,6 @@ void APP_start(void){
 			
 
 		}
-
-	
-
-
 }
 
 
