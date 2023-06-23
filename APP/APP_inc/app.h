@@ -10,7 +10,34 @@
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 
+#include "common.h"
 
+
+typedef enum {
+	
+	INITIAL_STOP 						= 0 ,
+	LONG_SIDE								= 1 ,
+	STOP_AFTER_L_S					= 2 ,
+	FIRST_ROTATION					= 3 ,
+	STOP_AFTER_FIRST_ROT		= 4 ,
+	SHORT_SIDE							= 5 ,
+	STOP_AFTER_S_S					= 6 ,
+	SECOND_ROTATION					= 7 ,
+	STOP_AFTER_SECOND_ROT		= 8 ,
+
+}enu_car_mode;
+
+
+
+// stages
+void ready_State(void);
+void shortSide_start();
+void longSide_start();
+void car_stop_state (uint32_t u32_duration_ms);
+void rotate_90degree_calculation (void);
+void rotate_90degree_state (void);
+
+// app
 void APP_init(void);
 void APP_start(void);
 
