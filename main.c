@@ -22,7 +22,6 @@ int main (void)
 	{
 
 		APP_init();
-		//for moustafa
 		while (1)
 		{
 			APP_start();
