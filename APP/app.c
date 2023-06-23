@@ -103,10 +103,10 @@ this function used to fo the following :
 */
 void longSide_start()
 {
-	led_on(GREEN_LED_PORT,GREEN_LED_PIN);
+//	led_on(GREEN_LED_PORT,GREEN_LED_PIN);
 	led_off(RED_LED_PORT,RED_LED_PIN);	
 	led_off(BLUE_LED_PORT,BLUE_LED_PIN);
-//		pwm_pin(50,GREEN_LED_PORT,GREEN_LED_PIN);																			//		--> [TODO] need to config pwm pin
+		pwm_pin(50,GREEN_LED_PIN,GREEN_LED_PORT);																			//		--> [TODO] need to config pwm pin
 	//	pwm_pin(50,PIN1,PORTF);																				//	--> [TODO] need to config pwm pin
 	//MOTOR_FORWARD(const str_motor_config_t *strPtr_a_motor_config);		--> [TODO] need to config STRUCTURE
 	
@@ -139,9 +139,7 @@ void rotate_90degree_state (void)
 	led_on(GREEN_LED_PORT,GREEN_LED_PIN);
 	led_on(RED_LED_PORT,RED_LED_PIN);	
 	led_on(BLUE_LED_PORT,BLUE_LED_PIN);
-//	pwm_pin(10,GREEN_LED_PORT,GREEN_LED_PORT);
-//	pwm_pin(10,RED_LED_PORT,RED_LED_PORT);
-//	pwm_pin(10,BLUE_LED_PORT,BLUE_LED_PORT);
+	
 	uint32_t u32_l_RotationTime = rotate_90degree_calculation(); 
 	time_sec_oneshot_mode( u32_l_RotationTime , TimerCallBack_carMode);
 
@@ -167,8 +165,8 @@ void shortSide_start()
 	led_off(RED_LED_PORT,RED_LED_PIN);	
 
 	
-//		pwm_pin(30,BLUE_LED_PORT,BLUE_LED_PORT);																					//--> [TODO] need to config pwm pin
-	//	pwm_pin(30,PIN2,PORTF);																					//--> [TODO] need to config pwm pin
+		pwm_pin(30,BLUE_LED_PIN,BLUE_LED_PORT);																					//--> [TODO] need to config pwm pin
+//		pwm_pin(30,PIN2,PORTF);																					//--> [TODO] need to config pwm pin
 	//MOTOR_FORWARD(const str_motor_config_t *strPtr_a_motor_config);		--> [TODO] need to config STRUCTURE
 	time_sec_oneshot_mode( _2_SECOND,TimerCallBack_carMode);
 
