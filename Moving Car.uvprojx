@@ -551,11 +551,6 @@
               <FilePath>.\HAL\led.c</FilePath>
             </File>
             <File>
-              <FileName>gptimer_manager.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\gptimer_manager.c</FilePath>
-            </File>
-            <File>
               <FileName>motor.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\HAL\motor.c</FilePath>
@@ -569,6 +564,11 @@
               <FileName>motor_config.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\HAL\HAL_inc\motor_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>gptimer_manager.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\gptimer_manager.c</FilePath>
             </File>
           </Files>
         </Group>
