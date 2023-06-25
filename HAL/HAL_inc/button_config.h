@@ -17,13 +17,14 @@
 #define  SW1_PORT      PORTF
 #define  SW1_PIN       PIN4
 
-#define  SW2_PORT      PORTF
-#define  SW2_PIN       PIN0
+#define  SW2_PORT      PORTD
+#define  SW2_PIN       PIN2
 
 
 /*******BUTTONS PROPERTIES CONFIG*******/
 #define  BUTTON_CURRENT       PORT_CURRENT_8mA
 #define  BUTTON_CONNECTION    PULL_UP
+#define  BUTTON_CONNECTION_   PULL_DOWN
 #define  BUTTON_DATA          HIGH
 #define  BUTTON_LOCK          UNLOCK
 #define  BUTTON_STAT          PORT_DIGITAL

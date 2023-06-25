@@ -24,17 +24,21 @@ typedef enum {
 	STOP_AFTER_S_S					= 6 ,
 	SECOND_ROTATION					= 7 ,
 	STOP_AFTER_SECOND_ROT		= 8 ,
+	REPEAT									= 9 ,
 
 }enu_car_mode;
 
-
+typedef enum {
+	CAR_STOP									 	= 0,
+	CAR_START										=	1
+}enu_car_start_stop;
 
 // stages
 void ready_State(void);
 void shortSide_start();
 void longSide_start();
-void car_stop_state (uint32_t u32_duration_ms);
-void rotate_90degree_calculation (void);
+void car_stop_state (uint32_t u32_a_duration_ms);
+uint32_t rotate_90degree_calculation (void);
 void rotate_90degree_state (void);
 
 // app
