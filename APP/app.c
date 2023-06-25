@@ -32,11 +32,22 @@ uint8_t sequence;
 // GLOBAL VARIABLES
 uint8_t u8_carMode ,u8_start ;
 
+void f10 (void);
+void f (void)
+{
+  pwm_pin(90,PIN2,PORTF);
+	time_sec_oneshot_mode(3,f10);
+}
 
-
+void f10 (void)
+{
+pwm_timer_stop();
+}
 
 void APP_init(void)
 {
+		pwm_pin(50,PIN2,PORTF);
+	time_sec_oneshot_mode(3,f);
 	/* COMMENTED TO AVOID ERROE 
 	
 	 buttonstate=released;	

@@ -1,3 +1,11 @@
+/**
+ ** @file                   gptimer.c
+ ** @brief                  This is source file for gptimer for TM4C123GH6PM
+ ** @author                 Mohamed Sayed
+ ** @date                   June 21, 2023
+ ** @version                0.1
+ */
+
 
 #include "gptimer.h"
 
@@ -99,6 +107,11 @@ static  void(*fptr_WTimer4_B)(void);
 static  void(*fptr_WTimer5_B)(void);
 
 /******************************************************************************/
+/**
+ *  @brief 			   This function initializes the GPT.
+ *  @param[in]		 pgpio pointer to input configuration structure.
+ *  @return        ::SUCCESS in case of success, otherwise, review error code
+ */
 uint8_t timer_init( Timer_cfg_st* timer_Cfg_st)
 {
 	uint8_t uint8_tstatus=SUCCESS;
@@ -385,7 +398,11 @@ uint8_t timer_init( Timer_cfg_st* timer_Cfg_st)
 		return uint8_tstatus;
 }
 
-
+/**
+ *  @brief 			   This function start the GPT.
+ *  @param[in]		 pgpio pointer to input configuration structure.
+ *  @return        ::SUCCESS in case of success, otherwise, review error code
+ */
 uint8_t timer_start( Timer_cfg_st* timer_Cfg_st)
 {
 		uint8_t uint8_tstatus=SUCCESS;
@@ -404,6 +421,11 @@ uint8_t timer_start( Timer_cfg_st* timer_Cfg_st)
 		return uint8_tstatus;
 }
 
+/**
+ *  @brief 			   This function stop the GPT.
+ *  @param[in]		 pgpio pointer to input configuration structure.
+ *  @return        ::SUCCESS in case of success, otherwise, review error code
+ */
 uint8_t timer_stop( Timer_cfg_st* timer_Cfg_st)
 {
 	uint8_t uint8_tstatus=SUCCESS;
@@ -422,7 +444,12 @@ uint8_t timer_stop( Timer_cfg_st* timer_Cfg_st)
 		return uint8_tstatus;
 }
 
-uint8_t timer_A_interrupt_enable( Timer_cfg_st* timer_Cfg_st)
+/**
+ *  @brief 			   This function enable the interrupt the GPT.
+ *  @param[in]		 pgpio pointer to input configuration structure.
+ *  @return        ::SUCCESS in case of success, otherwise, review error code
+ */
+uint8_t timer_interrupt_enable( Timer_cfg_st* timer_Cfg_st)
 {
 	uint8_t uint8_tstatus=SUCCESS;
 	  if (timer_Cfg_st->timer_type==TIMER_A)
@@ -525,6 +552,11 @@ uint8_t timer_A_interrupt_enable( Timer_cfg_st* timer_Cfg_st)
 		return uint8_tstatus;
 }
 
+/**
+ *  @brief 			   This function disable the interrupt the GPT.
+ *  @param[in]		 pgpio pointer to input configuration structure.
+ *  @return        ::SUCCESS in case of success, otherwise, review error code
+ */
 uint8_t timer_B_interrupt_disable( Timer_cfg_st* timer_Cfg_st)
 {
 	uint8_t uint8_tstatus=SUCCESS;
@@ -543,6 +575,11 @@ uint8_t timer_B_interrupt_disable( Timer_cfg_st* timer_Cfg_st)
 		return uint8_tstatus;
 }
 
+/**
+ *  @brief 			   This function set callback function for interrupt.
+ *  @param[in]		 Fptr (pointer to function), pgpio pointer to input configuration structure.
+ *  @return        ::SUCCESS in case of success, otherwise, review error code
+ */
 uint8_t timer_interrupt_setcallback( Timer_cfg_st* timer_Cfg_st,void(*Fptr)(void))
 {
 	uint8_t uint8_tstatus=SUCCESS;
@@ -679,6 +716,7 @@ void TIMER1A_Handler(void)
 	if (fptr_Timer1_A!=NULLPTR)
 	{
 		fptr_Timer1_A();
+		SET_BIT(GPTMICR(TIMER1_m),TATOCINT);
 	}
 	else
 	{
@@ -690,6 +728,7 @@ void TIMER2A_Handler(void)
 	if (fptr_Timer2_A!=NULLPTR)
 	{
 		fptr_Timer2_A();
+		SET_BIT(GPTMICR(TIMER2_m),TATOCINT);
 	}
 	else
 	{
@@ -701,6 +740,7 @@ void TIMER3A_Handler(void)
 	if (fptr_Timer3_A!=NULLPTR)
 	{
 		fptr_Timer3_A();
+		SET_BIT(GPTMICR(TIMER3_m),TATOCINT);
 	}
 	else
 	{
@@ -933,6 +973,9 @@ void WTIMER5B_Handler(void)
 		//do nothing
 	}
 }
+
+
+
 
 
 

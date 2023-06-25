@@ -1,10 +1,22 @@
+/**
+ ** @file                   gptimer_manager_config.h
+ ** @brief                  This is header file for gptimer_manager 
+ ** @author                 Nada Abdelazim
+ ** @date                   June 21, 2023
+ ** @version                0.1
+ */
 
-#include "gptimer.h"
+#ifndef GPTIMER_MANAGER_CONFIG_H_
+#define GPTIMER_MANAGER_CONFIG_H_
+
+
 
 /******* TIMERS CONFIGURATIONS DONE BY THE USER*******/
-		
+#define TIMER_US     TIMER0_m
+#define TIMER_MS     TIMER1_m
+#define TIMER_S      TIMER0_m
 
-
+/******* TIMER0 CONFIGURATIONS DONE BY THE USER*******/
 #define    TIMER0_MODE               ONESHOT_MODE       
 #define    TIMER0_NUM                TIMER0_m 
 #define    TIMER0_RES                RES16BIT
@@ -17,5 +29,15 @@
 #define    TIMER0_PRESCALER           200 
 
 
+/******* SYSTEM CONFIGURATIONS DONE BY THE USER******/
 
-#define   signal_duration         500     
+#define   SIGNAL_DURATION          1000     
+#define   SYSTEM_CLOCK             4000
+
+
+
+
+
+
+
+#endif
