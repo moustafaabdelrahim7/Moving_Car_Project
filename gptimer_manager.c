@@ -42,6 +42,7 @@ static volatile uint8_t port=100;
 static volatile uint8_t pin=100;
 static volatile uint16_t count_on=0;
 static volatile uint16_t count_off=0;
+static volatile uint8_t flag_sec_one_shot=0;
 
 volatile uint8_t flag=0;
 volatile uint8_t flag_ON=0;
@@ -162,7 +163,7 @@ uint8_t pwm_timer_stop (void)
 uint8_t time_us(uint16_t time , void(*fptr)(void))
 {
 	uint8_t uint8_tstatus=SUCCESS;
-	if (fptr!=NULLPTR && flag_us==DISABLE)
+	if (fptr!=NULLPTR && flag_us==DISABLE  )
  {
 	 flag_us=ENABLE;
 	 Fptr_us=fptr;
@@ -308,8 +309,10 @@ static void Time_s(void)
 uint8_t time_sec_oneshot_mode(uint16_t time,void(*fptr)(void)) //maximum 3 sec
 {
 	uint8_t uint8_tstatus=SUCCESS;
-	if ((fptr!=NULLPTR) && (time <= MAX_ONESHOT_TIME_S))
+	if ((fptr!=NULLPTR) && (time <= MAX_ONESHOT_TIME_S) && (flag_sec_one_shot == DISABLE))
 	{
+		
+		flag_sec_one_shot = ENABLE ;
 	uint16_t  count_sec_oneshot_mod=0;
 	Fptr_sec_oneshot_mod=fptr;
 	count_sec_oneshot_mod=((uint64_t)time*4000000)/PRESCALER_S;
@@ -341,6 +344,8 @@ uint8_t time_sec_oneshot_mode(uint16_t time,void(*fptr)(void)) //maximum 3 sec
 static void Time_sec_oneshot_mode(void)
 {
 	Fptr_sec_oneshot_mod();
+	flag_sec_one_shot = DISABLE;
+	
 }
 
 /*******************************************************************************************************************************/
