@@ -24,6 +24,7 @@ typedef enum {
 	STOP_AFTER_S_S					= 6 ,
 	SECOND_ROTATION					= 7 ,
 	STOP_AFTER_SECOND_ROT		= 8 ,
+	REPEAT									= 9 
 
 }enu_car_mode;
 

@@ -236,7 +236,12 @@ void APP_start(void){
 			{
 				
 				car_stop_state(_500_MS_SECOND);
-				u8_carMode = LONG_SIDE ;				
+							
+			}
+				else if (u8_carMode == REPEAT)
+			{
+				
+				u8_carMode = LONG_SIDE ;			
 			}
 			
 		}
